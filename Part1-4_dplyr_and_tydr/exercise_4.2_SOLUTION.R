@@ -153,6 +153,7 @@ ggplotly(p_tidy_cars2)
 #     On gthe other hand, cars with 16 cylinders exist, but zero are produced.
 #     When using this option we cannot distinguish between 'non-existing' and 'zero'!
 #   - This does not happen when we use ordered factors. 
+
 # Which option is better for visualization?
 #   - Thus, ordered factors are the better option for visualization!
 
