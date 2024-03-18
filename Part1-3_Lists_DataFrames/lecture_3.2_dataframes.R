@@ -156,7 +156,7 @@ new_metrics <- data.frame(
 )
 
 # Adding the new data frame "new_metrics" to our "people" data frame using cbind
-people <- cbind(people, new_traits)
+people <- cbind(people, new_metrics)
 print(people)
 
 
