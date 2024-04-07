@@ -1,7 +1,7 @@
 ##############################################
 # Time Series Analysis with R (TSAR)
 # PART 2: Time Series Analysis
-# Self-Study 1.3: XXXX
+# Self-Study 1.3: Tome Plots and White Noise
 # gwendolin.wilke@fhnw.ch
 ##############################################
 

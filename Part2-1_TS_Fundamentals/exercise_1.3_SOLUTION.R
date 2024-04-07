@@ -1,7 +1,7 @@
 ##############################################
 # Time Series Analysis with R (TSAR)
 # PART 2: Time Series Analysis
-# Exercise 1.3: Exploring tsibble objects
+# Exercise 1.3: Time Plots, Seasonal Plots, and ACF Plots
 # gwendolin.wilke@fhnw.ch
 ##############################################
 
