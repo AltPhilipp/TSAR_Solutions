@@ -4,9 +4,8 @@
 # Exercises 6: Exponential Smoothing
 # gwendolin.wilke@fhnw.ch
 ##############################################
-# This script contains only accompanying code for exercise 6.
-# For the written solutions, please download the word file from Moodle.
-##############################################
+
+
 #### Task 1 - Simple exponential smoothing
 
 # a) For the optimal smoothing parameter provided by the ETS() function, 
