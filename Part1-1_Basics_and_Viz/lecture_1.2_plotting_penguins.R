@@ -46,17 +46,18 @@ ggplot(data = penguins,
                      y = bill_length_mm))
 
 # Represent each observation with a point
-ggplot(data = penguins,
-       mapping = aes(x = bill_depth_mm,
-                     y = bill_length_mm)) + 
-geom_point()
+ggplot(data = penguins) +
+  geom_point(mapping = aes(x = bill_depth_mm, y = bill_length_mm)) +
+  geom_line(mapping = aes(x = bill_depth_mm, y = bill_length_mm))
 
 # map species to the colour 
 ggplot(data = penguins,
        mapping = aes(x = bill_depth_mm,
                      y = bill_length_mm,
                      colour = species)) +
-  geom_point()
+  geom_point()+
+  geom_line()+
+  geom_smooth()
 
 # Title the plot "Bill depth and length"
 ggplot(data = penguins,
@@ -181,7 +182,7 @@ ggplot(data = penguins) +
 # bill length and island
 ggplot(data = penguins) +
   geom_col(mapping = aes(x = island,
-                         y = bill_length_mm))
+                         y = bill_length_mm)) # col adds up y values
 
 # bill length and species
 ggplot(data = penguins) +
@@ -259,7 +260,7 @@ ggplot(data = penguins) +
 # species count
 ggplot(data = penguins) +
   geom_bar(mapping = aes(x = species)) +
-  coord_flip()
+  coord_flip() # flip x and y axis
 
 # species by island
 ggplot(data = penguins,
@@ -287,13 +288,13 @@ ggplot(data = penguins) +
 ggplot(data = penguins) +
   geom_point(mapping = aes(x = body_mass_g,
                            y = bill_length_mm,
-                           color = species)) 
+                           color = species)) # automatically apply colors
 
 # setting the color to the fixed value "red" 
 ggplot(data = penguins) +
   geom_point(mapping = aes(x = body_mass_g,
                            y = bill_length_mm),
-             color = "red") 
+             color = "darkred") # all points are darkred
 
 
 # ====== Facets
@@ -302,14 +303,14 @@ ggplot(data = penguins) +
   geom_point(mapping = aes(x = body_mass_g,
                            y = bill_length_mm,
                            color = species)) +
-  facet_wrap(~island) 
+  facet_wrap(~island) # separate plots for each island as facets
 
 
 ggplot(data = penguins) +
   geom_point(mapping = aes(x = body_mass_g,
                            y = bill_length_mm,
                            color = species)) +
-  facet_grid(island ~ sex) 
+  facet_grid(island ~ sex) # separate plots for each island and sex
 
 # ====== pairs and ggpairs()
 
